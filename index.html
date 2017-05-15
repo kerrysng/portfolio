@@ -29,6 +29,11 @@
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
 
+    <!-- ScrollMagic -->
+    <script src="js/ScrollMagic.min.js" charset="utf-8"></script>
+    <script src="plugins/debug.addIndicators.min.js" charset="utf-8"></script>
+    <script src="plugins/jquery.ScrollMagic.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
 
 </head>
 
@@ -148,7 +153,7 @@
     </section>
 
     <!-- Callout -->
-    <aside class="callout">
+    <aside id="callout" class="callout">
         <div class="text-vertical-center">
 62        </div>
     </aside>
@@ -280,33 +285,6 @@
             }
         });
     });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
-
-
     </script>
 
 </body>
