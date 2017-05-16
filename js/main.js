@@ -7,7 +7,7 @@ $(document).ready(function() {
   var pinHeaderScene = new ScrollMagic.Scene({ //define the settings
     triggerElement: '#top',
     triggerHook: 0, //pinning to the top of the page
-    // duration: '10%'
+    // duration: '20%'
   })
   .setPin('#top', {pushfollowers: false})
   .addTo(controller);
@@ -15,7 +15,7 @@ $(document).ready(function() {
   //pin the callout
   var pinCalloutScene = new ScrollMagic.Scene({ //define the settings
     triggerElement: '#callout',
-    triggerHook: 0.5,
+    triggerHook: 0.4,
     duration: '20%'
   })
   .setPin('#callout', {pushfollowers: false})
